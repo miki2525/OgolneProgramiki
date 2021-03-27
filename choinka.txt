@@ -1,0 +1,18 @@
+function RYSUJ(height){
+        var spaces = "";
+        var stars = "";
+
+    for ( i = 1; i <= height; i++){
+        numOfSpaces = height - i;
+        numOfStars = 2 * i - 1;
+            spaces = "";
+            stars = "";
+        for (j = 0; j < numOfSpaces; j++){
+            spaces += " ";
+        }
+        for(j = 0; j < numOfStars; j++){
+            stars += "*";
+    }
+            console.log(spaces + stars);
+}
+}
