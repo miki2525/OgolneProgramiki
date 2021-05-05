@@ -2,10 +2,10 @@ package codility;
 
 import java.util.Arrays;
 import java.util.Comparator;
-
+import java.util.List;
 public class binarygap {
     public static void main(String[] args) {
-        System.out.println(Solution(15));
+        System.out.println(Solution(5));
         int x = 1, y = 1, z = 0;
         if (x == y | x < ++y) {
             z = x+y;
@@ -14,6 +14,7 @@ public class binarygap {
             z = 1;
         }
         System.out.println(z);
+
     }
 
     public static int Solution(int N){
