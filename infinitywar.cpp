@@ -10,9 +10,9 @@ int main (void)
 	char imie[20];
 	int k, x, y, z;
 	
-	printf("\n\t\t\tElo, podaj imie Ziomek: ");
+	printf("\n\t\t\tElo, podaj imie: ");
 	scanf("%s", &imie);
-	printf(" Siema %s!\n\n Odpaliles(las) plik z zabawa pt. \"nie daj sie ruchnac przez Czoko\"\n\n Wyobraz sobie szklanke, w ktorej znajduja sie cukierki czekoladowe \"Czoko\" oraz papryczka chili.\n Bedziesz mierzyl sie z przeciwnikiem o imieniu CPU. Twoim zadaniem jest wyciagniecie takiej ilosci Czoko, by w szklance pozostala tylko papryczka chili.\n\n W jednym ruchu mozesz wyjac 1, 2 lub 3 cukierki Czoko. Ten Gracz, ktoremu zostanie tylko chili do wyciagniecia, PRZEGRYWA(= L O O S E R)\n\n W szklance jest 13 Czoko + papryczka chili\n\n CPU jest gospodarzem pojedynku wiec on bedzie zaczynal\n\n", imie);
+	printf(" Siema %s!\n\n Odpaliles(las) plik z zabawa pt. \"nie daj sie oszukac przez Czoko\"\n\n Wyobraz sobie szklanke, w ktorej znajduja sie cukierki czekoladowe \"Czoko\" oraz papryczka chili.\n Bedziesz mierzyl sie z przeciwnikiem o imieniu CPU. Twoim zadaniem jest wyciagniecie takiej ilosci Czoko, by w szklance pozostala tylko papryczka chili.\n\n W jednym ruchu mozesz wyjac 1, 2 lub 3 cukierki Czoko. Ten Gracz, ktoremu zostanie tylko chili do wyciagniecia, PRZEGRYWA(= L O O S E R)\n\n W szklance jest 13 Czoko + papryczka chili\n\n CPU jest gospodarzem pojedynku wiec on bedzie zaczynal\n\n", imie);
 	
 	/*szklana*/
 	printf (" #\t\t#\n");	
@@ -37,9 +37,9 @@ int main (void)
 
 
 
-	printf("jestes juz gotow??\n to na chuj czekasz?! aby rozpoczac oblicz \"x\" z rownania 2*x+2=25+x, potwierdz przyciskiem ENTER i wygraj z CPU!\n");
+	printf("jestes juz gotow??\n to na co czekasz?! aby rozpoczac oblicz \"x\" z rownania 2*x+2=25+x, potwierdz przyciskiem ENTER i wygraj z CPU!\n");
 
-dupa:
+wynik:
 	scanf("%d", &m);
 	if (m == 23)
 	{
@@ -48,8 +48,8 @@ dupa:
 	}
 	else 
 	{ 
-	printf("\t\t\t\t$$$$$$ Access DENIED $$$$$$ sprobuj ponownie Cieniasku\n");
-	goto dupa;
+	printf("\t\t\t\t$$$$$$ Access DENIED $$$$$$ sprobuj ponownie\n");
+	goto wynik;
 }
 
 
@@ -85,7 +85,7 @@ for(z=5; z>0; z--){
 	sleep(2);
  	printf("\tWziales %d Czoko\n Pozostalo: %d Czoko + chili\n",y, x-y);}
  	 else{
-	printf("\n\tUmiesz czytac ze zrozumieniem? no serio pytam: ""UMISZ CYTAC??\n Podaj cyfre od 1 do 3\n");
+	printf("\n\tPodaj cyfre od 1 do 3\n");
 	goto nalepka; }
  	
  	
@@ -106,7 +106,6 @@ for(z=5; z>0; z--){
  printf("\n==============================\t\tTwoja kolej!\n\n");}
 }
  printf ("Przegrales\n");
- printf("\n\n\t\t\t============================WACHASZ    DUPE============================"); 
  printf("\n\t\t\t==============================L=O=O=S=E=R==============================");
  printf("\njesli chcesz rewanzu, wcisnij \"d\" i odpal program ponownie");
  while (getchar()!= 'd');
